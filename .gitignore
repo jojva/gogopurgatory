@@ -2,3 +2,6 @@
 *.rpyc
 *.rpy.bak
 *.rpyb
+game/saves/
+log.txt
+tmp/
