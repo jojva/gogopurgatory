@@ -9,7 +9,7 @@ init python:
     # This returns speaking if the character is speaking, and done if the
     # character is not.
     def while_speaking(name, speak_d, done_d, st, at):
-        renpy.music.play("sound.wav", "music")
+        renpy.music.play("sound/sound.wav", "music")
         if speaking == name:
             return speak_d, .1
         else:
@@ -37,12 +37,36 @@ init python:
     speaker = renpy.curry(speaker_callback)
 
 
-# Create such a character.
-define girlslow = Character("Girl", callback=speaker("girl"), what_slow_cps=20)
+# Declare images below this line, using the image statement.
+image bg one = "img/bg/back01.png"
+image bg two = "img/bg/back02.png"
 
-# Composite things together to make a character with blinking eyes and
-# lip-flap.
-image girl normal = LiveComposite(
+image dick cute = "img/D/base_cute.png"
+image dick evil = "img/D/base_evil.png"
+
+image flick base = "img/F/base.png"
+
+image george basic_one = "img/char/G/base_01.png"
+image george basic_two = "img/char/G/base_02.png"
+image george depressed = "img/char/G/depressed.png"
+
+image octopolis base = "img/O/base.png"
+
+image secretary base = "img/S/secretary.png"
+
+image god base = "img/V/base.png"
+
+image jeanette angry = "img/char/J/angry.png"
+# TODO: Unused?
+# image jeanette eyes_closed = "img/char/J/base_EC.png"
+# image jeanette eyes_open = "img/char/J/base_EO.png"
+image jeanette blase = "img/char/J/blase.png"
+image jeanette fear = "img/char/J/fear.png"
+image jeanette badass = "img/char/J/badass.png"
+image jeanette shocked = "img/char/J/shocked.png"
+
+# Composite things together to make a character with blinking eyes and lip-flap.
+image jeanette normal = LiveComposite(
     (520, 768),
     (0, 0), "img/char/J/anim/normal_body.png",
     (0, 0), "girl eyes normal",
@@ -69,60 +93,44 @@ image girl mouth normal:
     .2
     repeat
 
-
-
-# Declare images below this line, using the image statement.
-image bg one = "img/bg/Back01.png"
-image bg two = "img/bg/Back02.png"
-
-image jeanette angry = "img/char/J/Angry.png"
-image jeanette eyes_closed = "img/char/J/Base_EC.png"
-image jeanette eyes_open = "img/char/J/Base_EO.png"
-image jeanette eyes_animated:
-    "img/char/J/Base_EO.png"
-    pause (5)
-    "img/char/J/Base_EC.png"
-    pause.1
-    repeat
-image jeanette indifferent = "img/char/J/Blase.png"
-image jeanette fear = "img/char/J/Fear.png"
-image jeanette threatening = "img/char/J/Menace.png"
-image jeanette shocked = "img/char/J/Shock.png"
-
-image george basic_one = "img/char/G/Base_01.png"
-image george basic_two = "img/char/G/Base_02.png"
-image george depressed = "img/char/G/Depressed.png"
-
-# Declare characters used by this game.
-define e = Character('Jeanette', color="#cc6666")
-define g = Character('George', color="#ffea60")
+# Create such a character.
+define d = Character('Dick', color="#cc6666", what_slow_cps=20)
+define f = Character('Flick', color="#cc6666", what_slow_cps=20)
+define g = Character('George', color="#cc6666", what_slow_cps=20)
+define j = Character('Jeanette', color="#cc6666", what_slow_cps=20, callback=speaker('girl'))
+define o = Character('Octopolis', color="#cc6666", what_slow_cps=20)
+define s = Character('Secretary', color="#cc6666", what_slow_cps=20)
+# You can change god's name later in the game using: $ godname = "some_name"
+# Quick name: "a" as in "all-mighty"
+define a = DynamicCharacter("godname", color="#cc6666", what_slow_cps=20)
 
 
 # The game starts here.
 label start:
+    $ godname = 'God'
 
     scene black
-    show girl normal
+    show jeanette normal
 
     "Not speaking."
 
-    girlslow "Now I'm speaking. Blah blah blah blah blah blah blah."
+    j "Now I'm speaking. Blah blah blah blah blah blah blah."
 
     "Not speaking any more."
 
-    girl "Now I'm speaking once again. Blah blah blah blah blah blah blah."
+    j "Now I'm speaking once again. Blah blah blah blah blah blah blah."
 
     scene bg one
     show jeanette eyes_animated at left
     show george basic_one at right
 
-    e "I think I'm pretty. bla bla bla bla dfuh iuh gs kh kjhsjkhgsdfhkjh  hohgsshh kljh kj kg hkj ghkjg hjfgjh jfh jj ffrt fg fgj ff jf jfjjhjhf uff jf jfjfjf jfh "
+    j "I think I'm pretty. bla bla bla bla dfuh iuh gs kh kjhsjkhgsdfhkjh  hohgsshh kljh kj kg hkj ghkjg hjfgjh jfh jj ffrt fg fgj ff jf jfjjhjhf uff jf jfjfjf jfh "
 
     show bg two
     show jeanette threatening
     show george depressed
 
-    g "I'm fucking pretty too, bitch."
+    a "I'm fucking pretty too, bitch."
 
     "A dreadful place for all respectful dead."
 
