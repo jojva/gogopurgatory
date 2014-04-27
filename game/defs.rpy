@@ -74,9 +74,6 @@ image tr act2tr3 = "img/transitions/act2_transi3.png"
 image tr act2tr4 = "img/transitions/act2_transi4.png"
 image tr act2tr5 = "img/transitions/act2_transi5.png"
 image tr act2tr6 = "img/transitions/act2_transi6.png"
-image tr act2tr7 = "img/transitions/act2_transi7.png"
-image tr act2tr8 = "img/transitions/act2_transi8.png"
-image tr act2tr9 = "img/transitions/act2_transi9.png"
 
 
 # LOAD CHARACTERS
