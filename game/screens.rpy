@@ -25,6 +25,7 @@ screen say:
             if who:
                 text who id "who"
 
+            spacing 30 # TODO
             text what id "what"
 
     else:
@@ -55,7 +56,7 @@ screen say:
         add SideImage() xalign 0.0 yalign 1.0
 
     # Use the quick menu.
-    use quick_menu
+    #use quick_menu
 
 
 ##############################################################################

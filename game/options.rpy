@@ -17,24 +17,24 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 800
-    config.screen_height = 600
+    config.screen_width = 1024
+    config.screen_height = 768
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"temp"
+    config.window_title = u"Go! Go! Purgatory!"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
-    config.name = "temp"
-    config.version = "0.0"
+    config.name = "ggp"
+    config.version = "0.1"
 
     #########################################
     # Themes
 
     ## We then want to call a theme function. theme.roundrect is
-    ## a theme that features the use of rounded rectangles. 
+    ## a theme that features the use of rounded rectangles.
     ##
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
@@ -97,27 +97,28 @@ init -1 python hide:
     ## respectively.
 
     # style.window.background = Frame("frame.png", 12, 12)
+    style.window.background = Solid((0, 0, 0, 150))
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
 
-    # style.window.left_margin = 6
-    # style.window.right_margin = 6
-    # style.window.top_margin = 6
-    # style.window.bottom_margin = 6
+    style.window.left_margin = 20
+    style.window.right_margin = 20
+    # style.window.top_margin = 20
+    style.window.bottom_margin = 20
 
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 20
+    style.window.right_padding = 20
+    style.window.top_padding = 10
+    style.window.bottom_padding = 20
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    style.window.yminimum = 150
 
 
     #########################################
