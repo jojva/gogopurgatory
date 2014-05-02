@@ -14,9 +14,6 @@ label act1:
 
     scene tr act1
     $ renpy.pause(2.0, hard='True')
-    # saybehavior: FORCE user to CLICK to continue
-    # $ ui.saybehavior()
-    # $ ui.interact()
 
     show tr eye_anim
     $ renpy.pause(2.0, hard='True')
@@ -35,11 +32,13 @@ label act1:
 
     hide jeanette
     show george normal at right
-    # \n : entrée
     g "Hey! Listen! You pretty...\nHey! Listen! You female!"
     g "What are you doing here?"
 
-    show jeanette angry at left
+    show jeanette angry:
+        xpos -1.0
+        linear 1.5 left
+    $ renpy.pause(1.5, hard='True')
     j "?"
 
     show jeanette normal at left
@@ -65,7 +64,7 @@ label act1:
 
     g "Oi! This is no shitty wood! My name is George."
     $ georgename = "George"
-    g "And you are here in the {b}purgatory{/b}."
+    g "And you are here in the Purgatory."
 
     menu:
         "The purgatory? Like… The land of the dead and all?":
@@ -102,7 +101,7 @@ label act1:
 
     j "Quite fortunate for you."
 
-    show jeanette normal
+    show jeanette normal at left
     g "Very well, go towards this path and you will find..."
     show george normal at right
     g "The City Hall!"
@@ -120,4 +119,4 @@ label act1:
 
     stop music fadeout 1.0
 
-    jump return1
+    jump act2

@@ -20,12 +20,15 @@ label act3:
     scene tr act3tr6
     $ renpy.pause(1.5, hard='True')
 
-    scene bg three
+    scene bg four
+    with None
 
-    show jeanette blase at left with Dissolve(1)
+    show jeanette blase at left
+    show aguaron normal at right
+    with Dissolve(1)
     $ ui.saybehavior()
     $ ui.interact()
-    show aguaron normal at right:
+
     a "A heartful welcome…"
 
     show aguaron evil at right
@@ -52,14 +55,12 @@ label act3:
     a"Hell no I don’t care… ha… haha. Mouahahahahaha!!"
 
     menu:
-        "Listen, I don’t have time for this, the only that matters to me is to get home!":
-            j "Listen, I don’t have time for this, the only that matters to me is to get home!"
+        "Listen, I don’t have time for this, the only thing that matters to me is to get home!":
+            j "Listen, I don’t have time for this, the only thing that matters to me is to get home!"
             jump a3_dead
-        "Hum hum… so. I got lost, I’d actually want water, but not in the face thank you.And I didn’t work with George, are you done with this George?":
+        "Hum hum… so. I got lost, I’d actually want water, but not in the face thank you.":
             j "Hum hum… so. I got lost, I’d actually want water, but not in the face thank you."
-            jump a3_george
-        "OBJECTION!":
-            j "OBJECTION!"
+            j "And I didn’t work with George, are you done with this George?"
             jump a3_george
 
     label a3_dead:
@@ -70,64 +71,73 @@ label act3:
 
     label a3_george:
         show aguaron normal at right
-        a "Hum… Anyway you didn’t work for George ? This adorable..."
+        a "Hum… Anyway you didn’t work for George ? This is adorable..."
         show aguaron evil at right
         a "SON OF A BITCH!"
 
     show jeanette angry at left
-    j "I am telling you I didn’t! Take a look at me! Do you think I would work with such an creppy fairy?"
+    j "I am telling you I didn’t! Take a look at me! Do you think I would work with such a creepy fairy?"
     show aguaron normal at right
-    a "Hmmm… You’re probably right… Agent, please escort this lady in a comfortable cell with"
+    a "Hmmm… You’re probably right… Agent, please escort this lady in a comfortable cell with..."
     show aguaron evil at right
-    a "”Him”"
-    show octopolis base
+    a "\"Him\"!"
+    show octopolis base:
+        xalign 0.5
+        ypos 2.0
+        linear 3.0 center
+    $ renpy.pause(1.5, hard='True')
+
     o "No...!"
     show aguaron evil at right
     a "Yes !!!"
     show aguaron normal at right
-    a "No...I'm kidding!"
+    a "No... I'm kidding!"
     show aguaron evil at right
     a "No I'm not! Just throw her there!"
     show jeanette blase
-    j "fuck..."
+    j "Fuck..."
 
-    # pepito ! fais des trucs jolis batard !!
-
-    hide jeanette blase
-    hide octopolis base
-    hide aguaron evile
-
-    show bg four
+    scene black
+    with dissolve
+    scene bg five
+    with dissolve
 
     show prisoner souspi at right
-    p "  tu fais quoi dans ma cellule ? personne ne vient jamais dansma cellule...ma cellule...je veux etre seul ! Tu fais quoi dans ma cellule ?"
-    show jeanette normal at left
-    j "je me pose la meme question...Ecoute j'espere sortire assez vite  d'ici, donc ne panique pas je vais te laisser seul !"
-    j " ...tu fais quoi en prison ? sans vouloir te deranger..."
+    show jeanette normal:
+        xpos -2.0
+        yalign 0
+        linear 3.0 left
+    $ renpy.pause(3.0, hard='True')
+    $ ui.saybehavior()
+    $ ui.interact()
+
+    p "What are you doing in my cell? Nobody ever comes in my cell... MY cell... I want to be alone! What are you doing in my cell?"
+
+    j "I wonder the same thing... Look I'm about to get out of here hopefully, so don't panic I will leave you alone."
+    j "Soo... What are you doing in jail? I mean no offense."
     show prisoner normal at right
-    p "Sur mon crane est tatoué le plan de la prison ! ducoup il fallait bien que j'y sois enfermé pour savoir si le plan est bon non ?"
+    p "I tattooed the prison map on my skull! So I had to be arrested to check whether the map is correct, right?"
     show jeanette blase at left
-    j " euh...ouais je suppose…"
+    j "Erm yeah I guess."
 
     menu:
-        "Mon but est de s'échapper non pas de la prison mais du 'purgatoire' a vrai dire... pour linstant  je me balade et croise que des gens chelou…":
-            j "Mon but est de s'échapper non pas de la prison mais du 'purgatoire' a vrai dire... pour linstant  je me balade et croise que des gens chelou…"
+        "My purpose right now is to escape from the purgatory, not just the prison to be fair.":
+            j "My purpose right now is to escape from the purgatory, not just the prison to be fair."
             jump a3_escape
 
-        "m’échapper de cet endroit pourrais deja etre utile, pourrais-tu me montrer ton plan ??":
-            j "m’échapper de cet endroit pourrais deja etre utile, pourrais-tu me montrer ton plan ??"
+        "Escaping this place could be a nice progress, would you show me your map?":
+            j "Escaping this place could be a nice progress, would you show me your map?"
             jump a3_skull
 
     label a3_escape:
-
+        j "Up until now I've been wandering around only meeting shady people."
         show prisoner souspi at right
-        p "et bien si tu veux sortir d'ici il va falloir croiser encore pas mal de monde étrange…"
+        p "Actually if you want to escape you will have to meet a crapload more of shady people."
         jump a3_next
 
     label a3_skull:
-
         show prisoner back
-        p "voila voila..."
+        p "Check this out, it's on the back of my head. I'm clever."
         show jeanette shock at left
         $ renpy.pause(5.0, hard='True')
         j "Nevermind..."
@@ -135,53 +145,63 @@ label act3:
 
     label a3_next:
 
-
-    p "mais en revanche je sais comment tu pourrais sortire..."
+    p "On the other hand I know how you can get out..."
 
     show jeanette normal at left
-    j "mmh...continue"
+    j "Hmm... I'm listening."
 
     show prisoner normal at right
-    p "quand j'etait chez le tatoueur j'ai croisé un type completement nu qui parlé d'une 'clé' pour le portail du monde."
+    p "When I was at the tattoo's I met a completely naked guy, who told me about a \"key\" for the \"Stairway\"."
 
-    j "aaah enfin une bonne nouvelle dans ce monde de fou !!! ou est-il ?"
+    j "Aaah finally some good news in this crazy world! Where can I find that key?"
 
     show prisoner souspi at right
-    p "j'sais pas trop je te rappel que je suis en prison ! mais je pense qu’il traine souvent a cet endroit..."
+    p "I don't know, let me recall you I'm in jail! But I believe he often hangs out at this place..."
 
-    j "quel endroit ???"
+    j "What place??"
 
     show prisoner normal at right
-    p "la discoteque de la ville, le : Dance ! Dance ! Purgatory !\nLieu de débauche pour tout mort qui ce respect !"
+    p "It's the city's nightclub, Dance! Dance! Purgatory!\n\"Come as you are in our obscene place for all respectful dead\"."
 
     show jeanette blase at left
-    j "arf je deteste ce genre d'endroit... bon j'ai quand meme une solution !\n je te remerci O etrange monsieur !"
+    j "Damn I hate that kind of place... But I have a solution anyway!\nThank you, O strange Sir."
 
-    a "Et bien vous etes libre, n'ayant rien contre vous..."
+    a "Having come up with nothing against you, you are free to go."
 
-    hide prisoner
-    hide jeanette
+    show jeanette normal:
+        linear 1.5 xpos -2.0
+    $ renpy.pause(1.5, hard='True')
 
-    scene bg three
+    scene black
+    with dissolve
+    scene bg four
+    with dissolve
 
-    #jeanette ce barre par la gauche et elle ce retrouve a droit sur l'écran d'apres
-
-    show jeanette normal at right
+    show jeanette normal:
+        yalign 0
+        xpos 2.0
+        linear 1.5 right
     show aguaron normal at left
-    a "bon et bien jespere que vous ne recroiserais pas George la fée..."
+    $ renpy.pause(1.5, hard='True')
+
+
+    a "And I hope you won't cross paths with George the Fairy again..."
 
     show aguaron evil at left
-    a "ou sinon je vous traquerez jusqu'a la mort.."
+    a "Or I will hunt you down."
 
     show jeanette angry at right
-    j "bon,et si je le recroise je fais quoi ?"
+    j "Then what do I do if I meet him again?"
 
-    a "George a une prime de 1.000.000 de Gils !! il faut le capturer"
+    a "George has a 1,000,000 Gils reward for his capture!!! You would provide us a valuable service."
 
     show jeanette blase at right
-    j "Bon ok..."
+    j "Whatever."
 
-
-    stop music fadeout 1.0
-
-    jump return3
+    menu:
+        "Go to the Dance! Dance! Purgatory! night club":
+            stop music fadeout 1.0
+            jump act4
+        "Look for George":
+            stop music fadeout 1.0
+            jump act4x

@@ -47,13 +47,17 @@ init python:
 
 # LOAD BACKGROUNDS
 
-image bg title = "img/title_screen.png"
-image bg one   = "img/bg/back01.png"
-image bg two   = "img/bg/back02.png"
-image bg three = "img/bg/back04.png"
-image bg four  = "img/bg/back05.png"
-image bg five  = "img/bg/back06.png"
-
+image bg title  = "img/title_screen.png"
+image bg one    = "img/bg/Back01.png"
+image bg two    = "img/bg/Back02.png"
+image bg three  = "img/bg/Back03.png"
+image bg four   = "img/bg/Back04.png"
+image bg five   = "img/bg/Back05.png"
+image bg six    = "img/bg/Back06.png"
+image bg seven  = "img/bg/Back07.png"
+image bg eight  = "img/bg/Back08.png"
+image bg nine   = "img/bg/Back09.png"
+image bg ten    = "img/bg/Back010.png"
 
 
 # LOAD TRANSITIONS
@@ -87,6 +91,16 @@ image tr act3tr4 = "img/transitions/act3_transi4.png"
 image tr act3tr5 = "img/transitions/act3_transi5.png"
 image tr act3tr6 = "img/transitions/act3_transi6.png"
 
+image tr act3x = "img/transitions/act3x.png"
+image tr act3xtr1 = "img/transitions/act3x_transi1.png"
+image tr act3xtr2 = "img/transitions/act3x_transi2.png"
+image tr act3xtr3 = "img/transitions/act3x_transi3.png"
+image tr act3xtr4 = "img/transitions/act3x_transi4.png"
+image tr act3xtr5 = "img/transitions/act3x_transi5.png"
+image tr act3xtr6 = "img/transitions/act3x_transi6.png"
+image tr act3xtr7 = "img/transitions/act3x_transi7.png"
+image tr act3xtr8 = "img/transitions/act3x_transi8.png"
+
 image tr act4 = "img/transitions/act4.png"
 image tr act4tr1 = "img/transitions/act4_transi1.png"
 image tr act4tr2 = "img/transitions/act4_transi2.png"
@@ -96,6 +110,105 @@ image tr act4tr5 = "img/transitions/act4_transi5.png"
 image tr act4tr6 = "img/transitions/act4_transi6.png"
 image tr act4tr7 = "img/transitions/act4_transi7.png"
 image tr act4tr8 = "img/transitions/act4_transi8.png"
+
+image tr act45 = "img/transitions/act45.png"
+image tr act45tr1 = "img/transitions/act45_transi1.png"
+image tr act45tr2 = "img/transitions/act45_transi2.png"
+image tr act45tr3 = "img/transitions/act45_transi3.png"
+image tr act45tr4 = "img/transitions/act45_transi4.png"
+image tr act45tr5 = "img/transitions/act45_transi5.png"
+image tr act45tr6 = "img/transitions/act45_transi6.png"
+image tr act45tr7 = "img/transitions/act45_transi7.png"
+image tr act45tr8 = "img/transitions/act45_transi8.png"
+image tr act45tr9 = "img/transitions/act45_transi9.png"
+
+image tr act4x = "img/transitions/act4x.png"
+image tr act4xtr1 = "img/transitions/act4x_transi1.png"
+image tr act4xtr2 = "img/transitions/act4x_transi2.png"
+image tr act4xtr3 = "img/transitions/act4x_transi3.png"
+image tr act4xtr4 = "img/transitions/act4x_transi4.png"
+image tr act4xtr5 = "img/transitions/act4x_transi5.png"
+image tr act4xtr6 = "img/transitions/act4x_transi6.png"
+image tr act4xtr7 = "img/transitions/act4x_transi7.png"
+image tr act4xtr8 = "img/transitions/act4x_transi8.png"
+image tr act4xtr9 = "img/transitions/act4x_transi9.png"
+
+image tr act5 = "img/transitions/act5.png"
+image tr act5tr1 = "img/transitions/act5_transi1.png"
+image tr act5tr2 = "img/transitions/act5_transi2.png"
+image tr act5tr3 = "img/transitions/act5_transi3.png"
+image tr act5tr4 = "img/transitions/act5_transi4.png"
+image tr act5tr5 = "img/transitions/act5_transi5.png"
+image tr act5tr6 = "img/transitions/act5_transi6.png"
+
+image tr endmoney:
+    "img/transitions/End_MONEY01.png"
+    .2
+    "img/transitions/End_MONEY02.png"
+    .2
+    "img/transitions/End_MONEY03.png"
+    .2
+    "img/transitions/End_MONEY04.png"
+    .2
+    "img/transitions/End_MONEY05.png"
+    .2
+    "img/transitions/End_MONEY06.png"
+    .2
+    "img/transitions/End_MONEY07.png"
+    .2
+    "img/transitions/End_MONEY08.png"
+    .2
+    "img/transitions/End_MONEY09.png"
+    2
+    "img/transitions/End_MONEY010.png"
+    3
+
+image tr endstairway:
+    "img/transitions/End_Stairway01.png"
+    .2
+    "img/transitions/End_Stairway02.png"
+    .2
+    "img/transitions/End_Stairway03.png"
+    .2
+    "img/transitions/End_Stairway04.png"
+    .2
+    "img/transitions/End_Stairway05.png"
+    .2
+    "img/transitions/End_Stairway06.png"
+    .2
+    "img/transitions/End_Stairway07.png"
+    .2
+    "img/transitions/End_Stairway08.png"
+    .2
+    "img/transitions/End_Stairway09.png"
+    .2
+    "img/transitions/End_Stairway010.png"
+    2
+    "img/transitions/End_Stairway011.png"
+    3
+
+image tr endmagic:
+    "img/transitions/End_Magic01.png"
+    .2
+    "img/transitions/End_Magic02.png"
+    .2
+    "img/transitions/End_Magic03.png"
+    .2
+    "img/transitions/End_Magic04.png"
+    .2
+    "img/transitions/End_Magic05.png"
+    .2
+    "img/transitions/End_Magic06.png"
+    .2
+    "img/transitions/End_Magic07.png"
+    .2
+    "img/transitions/End_Magic08.png"
+    .2
+    "img/transitions/End_Magic09.png"
+    4
+    "img/transitions/End_Magic010.png"
+    3
+
 # LOAD CHARACTERS
 
 image octopolis base = "img/char/O/base.png"
@@ -105,13 +218,13 @@ image octopolis base = "img/char/O/base.png"
 # Aguaron normal
 image aguaron normal = LiveComposite(
     (520, 768),
-    (0, 0), "img/char/A/anim/normal_body.png",
+    (0, 0), "img/char/A/normal_body.png",
     (0, 0), "aguaron normal eyes",
-    (0, 0), WhileSpeaking("aguaron", "aguaron normal mouth", "img/char/A/anim/normal_mouthclose.png"),
+    (0, 0), WhileSpeaking("aguaron", "aguaron normal mouth", "img/char/A/normal_mouthclose.png"),
     )
 
 image aguaron normal eyes:
-    "img/char/A/anim/normal_eyesopen.png"
+    "img/char/A/normal_eyesopen.png"
     choice:
         4.5
     choice:
@@ -119,27 +232,27 @@ image aguaron normal eyes:
     choice:
         1.5
     # This randomizes the time between blinking.
-    "img/char/A/anim/normal_eyesclose.png"
+    "img/char/A/normal_eyesclose.png"
     .25
     repeat
 
 image aguaron normal mouth:
-    "img/char/A/anim/normal_mouthopen1.png"
+    "img/char/A/normal_mouthopen1.png"
     .2
-    "img/char/A/anim/normal_mouthopen2.png"
+    "img/char/A/normal_mouthopen2.png"
     .2
     repeat
 
 # Aguaron evil
 image aguaron evil = LiveComposite(
     (520, 768),
-    (0, 0), "img/char/A/anim/evil_body.png",
+    (0, 0), "img/char/A/evil_body.png",
     (0, 0), "aguaron evil eyes",
-    (0, 0), WhileSpeaking("aguaron", "aguaron evil mouth", "img/char/A/anim/evil_mouthclose.png"),
+    (0, 0), WhileSpeaking("aguaron", "aguaron evil mouth", "img/char/A/evil_mouthclose.png"),
     )
 
 image aguaron evil eyes:
-    "img/char/A/anim/evil_eyesopen.png"
+    "img/char/A/evil_eyesopen.png"
     choice:
         4.5
     choice:
@@ -147,14 +260,14 @@ image aguaron evil eyes:
     choice:
         1.5
     # This randomizes the time between blinking.
-    "img/char/A/anim/evil_eyesclose.png"
+    "img/char/A/evil_eyesclose.png"
     .25
     repeat
 
 image aguaron evil mouth:
-    "img/char/A/anim/evil_mouthopen1.png"
+    "img/char/A/evil_mouthopen1.png"
     .2
-    "img/char/A/anim/evil_mouthopen2.png"
+    "img/char/A/evil_mouthopen2.png"
     .2
     repeat
 
@@ -186,7 +299,7 @@ image carrot normal mouth:
     "img/char/C/anim/normal_mouthopen2.png"
     .2
     repeat
-    
+
 # Carrot angry
 image carrot angry = LiveComposite(
     (520, 768),
@@ -214,7 +327,7 @@ image carrot angry mouth:
     "img/char/C/anim/angry_mouthopen2.png"
     .2
     repeat
-    
+
 # Carrot hit
 image carrot hit = LiveComposite(
     (520, 768),
@@ -242,7 +355,7 @@ image carrot hit mouth:
     "img/char/C/anim/hit_mouthopen2.png"
     .2
     repeat
-    
+
 # Carrot happy
 image carrot happy = LiveComposite(
     (520, 768),
@@ -270,20 +383,63 @@ image carrot happy mouth:
     "img/char/C/anim/happy_mouthopen2.png"
     .2
     repeat
-    
-    
-    
+
+# God
+# god party
+image god party = LiveComposite(
+    (520, 768),
+    (0, 0), "god party body",
+    (0, 0), WhileSpeaking("god", "god party mouth", "img/char/D/party_mouthclose.png"),
+    )
+
+image god party body:
+    "img/char/D/party_body.png"
+    0.5
+    "img/char/D/party_body2.png"
+    0.5
+    repeat
+
+image god party mouth:
+    "img/char/D/party_mouthopen1.png"
+    .2
+    "img/char/D/party_mouthopen2.png"
+    .2
+    repeat
+
+# god normal
+# image god party = LiveComposite(
+#     (520, 768),
+#     (0, 0), "god party body",
+#     (0, 0), WhileSpeaking("god", "god party mouth", "img/char/D/party_mouthclose.png"),
+#     )
+
+# image god party body:
+#     "img/char/D/party_body.png"
+#     0.5
+#     "img/char/D/party_body2.png"
+#     0.5
+#     repeat
+
+# image god party mouth:
+#     "img/char/D/anim/party_mouthopen1.png"
+#     .2
+#     "img/char/D/anim/party_mouthopen2.png"
+#     .2
+#     repeat
+
+
+
 # Flick
 # Flick normal
 image flick normal = LiveComposite(
     (520, 768),
-    (0, 0), "img/char/F/anim/normal_body.png",
+    (0, 0), "img/char/F/normal_body.png",
     (0, 0), "flick normal eyes",
-    (0, 0), WhileSpeaking("flick", "flick normal mouth", "img/char/F/anim/normal_mouthclose.png"),
+    (0, 0), WhileSpeaking("flick", "flick normal mouth", "img/char/F/normal_mouthclose.png"),
     )
 
 image flick normal eyes:
-    "img/char/F/anim/normal_eyesopen.png"
+    "img/char/F/normal_eyesopen.png"
     choice:
         4.5
     choice:
@@ -291,14 +447,14 @@ image flick normal eyes:
     choice:
         1.5
     # This randomizes the time between blinking.
-    "img/char/F/anim/normal_eyesclose.png"
+    "img/char/F/normal_eyesclose.png"
     .25
     repeat
-    
+
 image flick normal mouth:
-    "img/char/F/anim/normal_mouthopen1.png"
+    "img/char/F/normal_mouthopen1.png"
     .2
-    "img/char/F/anim/normal_mouthopen2.png"
+    "img/char/F/normal_mouthopen2.png"
     .2
     repeat
 
@@ -354,8 +510,27 @@ image george normal eyes:
         3.5
     choice:
         1.5
-    # This randomizes the time between blinking.
     "img/char/G/anim/normal_eyesclose.png"
+    .25
+    repeat
+
+# George p (trash)
+image george p = LiveComposite(
+    (520, 768),
+    (0, 0), "img/char/G/anim/poubelle_body.png",
+    (0, 0), "george p eyes",
+    )
+
+image george p eyes:
+    "img/char/G/anim/poubelle_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/G/anim/poubelle_eyesclose.png"
     .25
     repeat
 
@@ -539,6 +714,54 @@ image jeanette normal mouth:
     .2
     repeat
 
+# Jeanette cute
+image jeanette cute = LiveComposite(
+    (520, 768),
+    (0, 0), "img/char/J/anim/cute_body.png",
+    (0, 0), "jeanette cute eyes",
+    )
+
+image jeanette cute eyes:
+    "img/char/J/anim/cute_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/J/anim/cute_eyesclose.png"
+    .25
+    repeat
+
+# Jeanette phone
+image jeanette phone = LiveComposite(
+    (520, 768),
+    (0, 0), "img/char/J/anim/phone_body.png",
+    (0, 0), "jeanette phone eyes",
+    (0, 0), WhileSpeaking("jeanette", "jeanette phone mouth", "img/char/J/anim/phone_mouthclosed.png"),
+    )
+
+image jeanette phone eyes:
+    "img/char/J/anim/phone_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/J/anim/phone_eyesclosed.png"
+    .25
+    repeat
+
+image jeanette phone mouth:
+    "img/char/J/anim/phone_mouthopen1.png"
+    .2
+    "img/char/J/anim/phone_mouthopen2.png"
+    .2
+    repeat
+
 
 # Jeanette shock
 image jeanette shock = LiveComposite(
@@ -587,8 +810,93 @@ image jeanette fear eyes:
     "img/char/J/anim/fear_eyesclosed.png"
     .25
     repeat
-    
-    
+
+# Mayor
+# Mayor angry
+image mayor angry = LiveComposite(
+    (520, 768),
+    (0, 0), "img/char/M/angry_body.png",
+    (0, 0), "mayor angry eyes",
+    (0, 0), WhileSpeaking("mayor", "mayor angry mouth", "img/char/M/angry_mouthclose.png"),
+    )
+
+image mayor angry eyes:
+    "img/char/M/angry_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/M/angry_eyesclose.png"
+    .25
+    repeat
+
+image mayor angry mouth:
+    "img/char/M/angry_mouthopen1.png"
+    .2
+    "img/char/M/angry_mouthopen2.png"
+    .2
+    repeat
+
+# Mayor inter
+image mayor inter = LiveComposite(
+    (520, 768),
+    (0, 0), "img/char/M/inter_body.png",
+    (0, 0), "mayor inter eyes",
+    (0, 0), WhileSpeaking("mayor", "mayor inter mouth", "img/char/M/inter_mouthclose.png"),
+    )
+
+image mayor inter eyes:
+    "img/char/M/inter_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/M/inter_eyesclose.png"
+    .25
+    repeat
+
+image mayor inter mouth:
+    "img/char/M/inter_mouthopen1.png"
+    .2
+    "img/char/M/inter_mouthopen2.png"
+    .2
+    repeat
+
+# Mayor normal
+image mayor normal = LiveComposite(
+    (520, 768),
+    (0, 0), "mayor normal eyes",
+    (0, 0), WhileSpeaking("mayor", "mayor normal mouth", "img/char/M/normal_body_mouthclose.png"),
+    )
+
+image mayor normal eyes:
+    "img/char/M/normal_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/M/normal_eyesclose.png"
+    .25
+    repeat
+
+image mayor normal mouth:
+    "img/char/M/normal_body_mouthopen1.png"
+    .2
+    "img/char/M/normal_body_mouthopen2.png"
+    .2
+    repeat
+
+
+
 # Prisoner
 # Prisoner normal
 image prisoner normal = LiveComposite(
@@ -617,9 +925,9 @@ image prisoner normal mouth:
     "img/char/P/anim/normal_mouthopen2.png"
     .2
     repeat
-    
-    
-    
+
+
+
 # Prisoner souspi
 image prisoner souspi = LiveComposite(
     (520, 768),
@@ -649,24 +957,64 @@ image prisoner souspi mouth:
     repeat
 
     # Prisoner back
-    
+
 image prisoner back = "img/char/P/body_dos.png"
-    
-    
-    
+
+
+# Zealot
+# Zealot
+image zealot normal = LiveComposite(
+    (520, 768),
+    (0, 0), "zealot normal head",
+    (0, 0), "zealot normal eyes",
+    (0, 0), WhileSpeaking("zealot", "zealot normal mouth", "img/char/R/normal_mouthclose.png"),
+    )
+
+image zealot normal head:
+    "img/char/R/normal_head_1.png"
+    .5
+    "img/char/R/normal_head_2.png"
+    .5
+    repeat
+
+image zealot normal eyes:
+    "img/char/R/normal_eyesopen.png"
+    choice:
+        4.5
+    choice:
+        3.5
+    choice:
+        1.5
+    # This randomizes the time between blinking.
+    "img/char/R/normal_eyesclose.png"
+    .25
+    repeat
+
+image zealot normal mouth:
+    "img/char/R/normal_mouthopen1.png"
+    .2
+    "img/char/R/normal_mouthopen2.png"
+    .2
+    repeat
+
+
+
 # DEFINE CHARACTERS
 
 define a = Character('Aguaron', color="#bdcc7d", what_slow_cps=20, callback=speaker('aguaron'))
-define c = Character('Pierre', color="#ce2c2c", what_slow_cps=20, callback=speaker('pierre'))
-define p = Character('Prisoner', color="#e94e1b", what_slow_cps=20, callback=speaker('prisoner'))
-define f = Character('Flick', color="#99cb99", what_slow_cps=20, callback=speaker('flick'))
-define g = DynamicCharacter("georgename", color="#ffe960", what_slow_cps=20, callback=speaker('george'))
-define j = Character('Jeanette', color="#cc6666", what_slow_cps=20, callback=speaker('jeanette'))
-define o = Character('Octopolis', color="#d0687d", what_slow_cps=20, callback=speaker('octopolis'))
-define s = Character('Secretary', color="#c9d2d7", what_slow_cps=20, callback=speaker('secretary'))
+define c = Character('Pierre', color="#ce2c2c", what_slow_cps=20, callback=speaker('carrot'))
 # You can change god's name later in the game using: $ godname = "some_name"
 # Quick name: "a" as in "all-mighty"
 define d = DynamicCharacter("godname", color="#ebeff9", what_slow_cps=20, callback=speaker('god'))
+define f = Character('Flick', color="#99cb99", what_slow_cps=20, callback=speaker('flick'))
+define g = DynamicCharacter("georgename", color="#ffe960", what_slow_cps=20, callback=speaker('george'))
+define j = Character('Jeanette', color="#cc6666", what_slow_cps=20, callback=speaker('jeanette'))
+define m = Character('Mayor', color="#9da2f5", what_slow_cps=20, callback=speaker('mayor'))
+define o = Character('Octopolis', color="#d0687d", what_slow_cps=20, callback=speaker('octopolis'))
+define p = Character('Prisoner', color="#e94e1b", what_slow_cps=20, callback=speaker('prisoner'))
+define phone = Character('Phone')
+define s = Character('Secretary', color="#c9d2d7", what_slow_cps=20, callback=speaker('secretary'))
+define z = Character('Zealot 2.0v', color="#908b83", what_slow_cps=20, callback=speaker('zealot'))
 
 # DEFINE EFFECTS
 
